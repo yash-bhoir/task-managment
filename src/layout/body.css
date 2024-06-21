@@ -1,0 +1,99 @@
+/* body2 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #d0e, #91f);
+  } */
+  
+  .container {
+    width: 1300px;
+    height: 300px;
+    display: grid;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+    list-style: none;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background :rgb(37, 37, 37);
+    /* background: rgba(84, 87, 87, 0.2); */
+    border-radius: 15px;
+  }
+  
+  .items {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .items:hover {
+    background-color: #fff; /* Change to white on hover */
+  }
+  
+  .items h3 {
+    margin: 10px 0;
+  }
+  
+  .items p {
+    margin: 5px 0;
+  }
+  
+  .task-list {
+    max-height: 100px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    padding-right: 5px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .task-list::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .task-item {
+    margin: 2px 0;
+    border: 1px solid #ccc; /* Add border to each task item */
+    padding: 5px; /* Optional: Add padding to make the border more visible */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .items .fa-check-circle {
+    color: #4CAF50; /* Example color */
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 430px;
+      height: 490px;
+      display: grid;
+      overflow: hidden;
+      margin: auto;
+      margin-top: 10px;
+      list-style: none;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 15px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      overflow: auto; /* Allow scrolling */
+      scrollbar-width: none; /* For Firefox */
+    }
+  
+    .container::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+    }
+  }
+  
